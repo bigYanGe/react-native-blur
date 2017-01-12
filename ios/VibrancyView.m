@@ -1,6 +1,5 @@
 #import "VibrancyView.h"
 #import "BlurView.h"
-#import <React/RCTComponent.h>
 
 @implementation VibrancyView {
   UIVisualEffectView *_visualEffectView;
@@ -50,7 +49,7 @@
   [self addSubview:_visualEffectView];
 }
 
-- (void)insertReactSubview:(id<RCTComponent>)subview atIndex:(NSInteger)atIndex {
+- (void)insertReactSubview:(id)subview atIndex:(NSInteger)atIndex {
   [_vibrancyView.contentView addSubview:(UIView*)subview];
 }
 
